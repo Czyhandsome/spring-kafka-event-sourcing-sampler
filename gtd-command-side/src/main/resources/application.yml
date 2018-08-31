@@ -10,7 +10,7 @@ spring:
   kafka:
     bootstrapServers: localhost:9092
     consumer:
-      groupId: getting-things-done-command
+      groupId: czyhandsome-command
       keyDeserializer: org.apache.kafka.common.serialization.StringDeserializer
       valueDeserializer: net.mguenther.gtd.kafka.serialization.ItemEventDeserializer
       autoOffsetReset: earliest
@@ -20,7 +20,7 @@ spring:
       ackMode: MANUAL
 
 gtd:
-  topic: topic-getting-things-done
+  topic: topic-czyhandsome
 
 eureka:
   client:

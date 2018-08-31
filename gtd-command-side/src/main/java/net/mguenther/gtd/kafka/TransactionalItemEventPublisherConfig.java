@@ -30,10 +30,10 @@ public class TransactionalItemEventPublisherConfig {
         config.put(ProducerConfig.MAX_IN_FLIGHT_REQUESTS_PER_CONNECTION, 1);
         config.put(ProducerConfig.RETRIES_CONFIG, Integer.MAX_VALUE);
         config.put(ProducerConfig.ENABLE_IDEMPOTENCE_CONFIG, true);
-        config.put(ProducerConfig.TRANSACTIONAL_ID_CONFIG, "getting-things-done");
+        config.put(ProducerConfig.TRANSACTIONAL_ID_CONFIG, "czyhandsome");
         final DefaultKafkaProducerFactory<String, AvroItemEvent> factory =
                 new DefaultKafkaProducerFactory<>(config);
-        factory.setTransactionIdPrefix("getting-things-done");
+        factory.setTransactionIdPrefix("czyhandsome");
         return factory;
     }
 

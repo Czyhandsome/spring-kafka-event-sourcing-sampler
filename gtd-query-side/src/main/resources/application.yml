@@ -6,7 +6,7 @@ spring:
   kafka:
     bootstrapServers: localhost:9092
     consumer:
-      groupId: getting-things-done-query
+      groupId: czyhandsome-query
       keyDeserializer: org.apache.kafka.common.serialization.StringDeserializer
       valueDeserializer: net.mguenther.gtd.kafka.serialization.ItemEventDeserializer
       autoOffsetReset: latest
@@ -16,7 +16,7 @@ spring:
       ackMode: MANUAL
 
 gtd:
-  topic: topic-getting-things-done
+  topic: topic-czyhandsome
 
 management:
   security:
